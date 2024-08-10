@@ -1,0 +1,35 @@
+[
+    {
+        "subject_img": "../images/1.jpg",
+        "author_name": "Faridul Islam",
+        "author_img": "../images/boy1.png",
+        "title": "Exploring the Basics ES6 Features",
+        "reading_time": "10 min",
+        "hash_subject": ["#Programming", "#ES6"]
+    },
+    {
+        "subject_img": "../images/2.png",
+        "author_name": "Faruk Foysal",
+        "author_img": "../images/boy2.png",
+        "title": "Understanding Fundamental of Programming",
+        "reading_time": "8 min",
+        "hash_subject": ["#Programming", "#Javascript"]
+    },
+    {
+        "subject_img": "../images/3.png",
+        "author_name": "Farid Tusher",
+        "author_img": "../images/girl1.jpg",
+        "title": "The Fundamentals of React.js",
+        "reading_time": "15 min",
+        "hash_subject": ["#React", "#Frontend"]
+    },
+    
+     {
+        "subject_img": "../images/4.jpg",
+        "author_name": "Ashick Khan",
+        "author_img": "../images/girl2.jpg",
+        "title": "Getting Started with React",
+        "reading_time": "9 min",
+        "hash_subject": ["#Programming", "Frontend" ]
+    }
+]
