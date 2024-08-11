@@ -1,12 +1,21 @@
 
 import './App.css'
+import Carts from './components/Carts/Carts'
+import Contents from './components/contents/Contents'
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-     <h1 className='bg-indigo-500'>Hello </h1>
-      
+    <Header></Header>
+    <div className='flex justify-between items-center mx-20 my-10'>
+      <Contents></Contents>
+      <Carts></Carts>
+
+    </div>
+    
+
     </>
   )
 }
