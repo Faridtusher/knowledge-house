@@ -1,39 +1,55 @@
 [
-    {
+     {
         "id" : 1,
-        "subject_img": "../images/1.jpg",
-        "author_name": "Faridul Islam",
-        "author_img": "../images/boy1.png",
-        "title": "Exploring the Basics ES6 Features",
-        "reading_time": 10 ,
-        "hash_subject": ["#Programming", "#ES6"]
+        "subject_img": "../images/2.png",
+        "author_name": "Farid Tusher",
+        "author_img": "../images/girl2.jpg",
+        "title": "How to learn the programming - Getting Started with Programming!!",
+        "last_read" : "June 23 (60 days ago)",
+        "reading_time": 9,
+        "hash_subject": ["#Programming", "Python" ]
     },
+
     {
         "id" : 2,
-        "subject_img": "../images/2.png",
-        "author_name": "Faruk Foysal",
-        "author_img": "../images/boy2.png",
-        "title": "Understanding Fundamental of Programming",
-        "reading_time": 8,
-        "hash_subject": ["#Programming", "#Javascript"]
+        "subject_img": "../images/html.jpg",
+        "author_name": "Faridul Islam",
+        "author_img": "../images/boy1.png",
+        "title": "Exploring the Fundamental HTML and features!",
+        "last_read" : "June 14 (25 days ago)",
+        "reading_time": 10 ,
+        "hash_subject": ["#Programming", "#HTML"]
     },
     {
         "id" : 3,
-        "subject_img": "../images/3.png",
+        "subject_img": "../images/css.jpg",
+        "author_name": "Faruk Foysal",
+        "author_img": "../images/boy2.png",
+        "title": "Understanding Fundamental of CSS and features!",
+        "last_read" : "July 14 (60 days ago)",
+        "reading_time": 8,
+        "hash_subject": ["#Style", "#CSS"]
+    },
+    {
+        "id" : 4,
+        "subject_img": "../images/js.jpg",
         "author_name": "Farid Tusher",
         "author_img": "../images/girl1.jpg",
-        "title": "The Fundamentals of React.js",
+        "title": "The Fundamentals of Javascript!!",
+        "last_read" : "August 14 (5 days ago)",
         "reading_time": 15,
-        "hash_subject": ["#React", "#Frontend"]
+        "hash_subject": ["#Programming", "#JavaScript"]
     },
     
      {
-        "id" : 4,
-        "subject_img": "../images/4.jpg",
+        "id" : 5,
+        "subject_img": "../images/reactjs.jpg",
         "author_name": "Ashick Khan",
         "author_img": "../images/girl2.jpg",
-        "title": "Getting Started with React",
+        "title": "Getting Started with React!!",
+        "last_read" : "June 23 (28 days ago)",
         "reading_time": 9,
         "hash_subject": ["#Programming", "Frontend" ]
     }
+    
 ]

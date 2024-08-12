@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Header></Header>
-    <div className='flex justify-between items-center mx-20 my-10'>
+    <div className='flex justify-between mx-20 my-10'>
       <Contents></Contents>
       <Carts></Carts>
 

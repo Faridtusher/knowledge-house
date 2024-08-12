@@ -13,11 +13,11 @@ const Contents = () =>{
 
 
    return(
-      <div className="md:w-2/3 bg-slate-50">
-         <h2>Hello : {contents.length}</h2>
+      <div className="md:w-2/3">
          {
             contents.map(content => <Content
-               key={content.id} content = {content}
+               key={content.id} 
+               content = {content}
             ></Content>)
          }
       </div>
