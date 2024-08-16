@@ -1,10 +1,9 @@
 
 import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'; // Import the icons
+import { IoBookmarkOutline } from "react-icons/io5";
 
-const Content = ({content}) => {
-   console.log(content)
+const Content = ({content, handelAddToCarts }) => {
+   // console.log(content)
    const {subject_img, author_name, author_img, title, last_read, reading_time, hash_subject} = content
    return (
       <div className='shadow-lg shadow-gray-500/40 p-3 rounded'>
@@ -23,7 +22,7 @@ const Content = ({content}) => {
             </div>
             <div className='flex items-center'>
                <span className='text-sm'>{reading_time} min read </span>
-               <button><FontAwesomeIcon icon={faCoffee} size="md" className="text-gray-700 m-2" /></button>
+               <button onClick={ () => handelAddToCarts (content)} className='ml-1'><IoBookmarkOutline /></button>
             </div>  
          </div>
 
@@ -40,7 +39,8 @@ const Content = ({content}) => {
 };
 
 Content.propTypes = {
-   content: PropTypes.object.isRequired
+   content: PropTypes.object.isRequired,
+   handelAddToCarts : PropTypes.func
 }
 
 export default Content;

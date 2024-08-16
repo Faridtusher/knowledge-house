@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Content from "../Content/Content";
+import PropTypes from 'prop-types'
 
-const Contents = () =>{
+
+const Contents = ({handelAddToCarts}) =>{
 
    const [contents, setContents] = useState([]);
    useEffect( () =>{
@@ -18,10 +20,15 @@ const Contents = () =>{
             contents.map(content => <Content
                key={content.id} 
                content = {content}
+               handelAddToCarts = {handelAddToCarts}
             ></Content>)
          }
       </div>
    )
+}
+
+Contents.propTypes = {
+   handelAddToCarts : PropTypes.func
 }
 
 export default Contents;
