@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 const Cart = ({cart}) => {
    const {title} = cart
    return (
-      <div>
-         <h1 className='text-xl'>{title}</h1>
+      <div className='bg-slate-100 font-semibold rounded p-3 my-4'>
+         <h1 className='text-xl text-bold'>{title}</h1>
       </div>
    );
 };

@@ -4,8 +4,8 @@ import Cart from '../Cart/Cart';
 
 const Carts = ({carts}) => {
    return (
-      <div className="md:w-1/3 bg-red-100 text-center p-4">
-         <p>Bookmarked Blogs : {carts.length} </p>
+      <div className="md:w-1/3 bg-slate-300 rounded text-center mx-2	 p-4">
+         <p className='bg-slate-100 font-semibold rounded p-2 text-red-600'>Bookmarked Blogs : {carts.length} </p>
          
          {
             carts.map(cart => <Cart key ={cart.id} cart ={cart}></Cart>)
