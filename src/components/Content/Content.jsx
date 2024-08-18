@@ -2,9 +2,9 @@
 import PropTypes from 'prop-types'
 import { IoBookmarkOutline } from "react-icons/io5";
 
-const Content = ({content, handelAddToCarts }) => {
+const Content = ({content, handelAddToCarts, handelTimes }) => {
    // console.log(content)
-   const {subject_img, author_name, author_img, title, last_read, reading_time, hash_subject} = content
+   const {id, subject_img, author_name, author_img, title, last_read, reading_time, hash_subject} = content
    return (
       <div className='shadow-lg shadow-gray-500/40 p-3 rounded'>
          <img className='rounded-md h-96 w-full object-cover' src={subject_img} alt="programming img" />
@@ -33,14 +33,15 @@ const Content = ({content, handelAddToCarts }) => {
                hash_subject.map((hash, idx) => <span key={idx}><a className="mr-4 text-sm" href=""> #{hash}</a> </span>)
             }
          </p>
-         <button className='text-purple-800 underline mb-5'>Make as Read</button>
+         <button onClick={() => handelTimes(id, reading_time)} className='text-purple-800 underline mb-5'>Make as Read</button>
       </div>
    );
 };
 
 Content.propTypes = {
    content: PropTypes.object.isRequired,
-   handelAddToCarts : PropTypes.func
+   handelAddToCarts : PropTypes.func,
+   handelTimes : PropTypes.func
 }
 
 export default Content;

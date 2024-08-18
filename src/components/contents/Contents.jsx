@@ -4,7 +4,7 @@ import Content from "../Content/Content";
 import PropTypes from 'prop-types'
 
 
-const Contents = ({handelAddToCarts}) =>{
+const Contents = ({handelAddToCarts, handelTimes}) =>{
 
    const [contents, setContents] = useState([]);
    useEffect( () =>{
@@ -21,6 +21,7 @@ const Contents = ({handelAddToCarts}) =>{
                key={content.id} 
                content = {content}
                handelAddToCarts = {handelAddToCarts}
+               handelTimes={handelTimes}
             ></Content>)
          }
       </div>
@@ -28,7 +29,8 @@ const Contents = ({handelAddToCarts}) =>{
 }
 
 Contents.propTypes = {
-   handelAddToCarts : PropTypes.func
+   handelAddToCarts : PropTypes.func,
+   handelTimes : PropTypes.func
 }
 
 export default Contents;
